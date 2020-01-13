@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578508633083.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2525911619",
+    "id" : "F2013E2F",
+    "lastKnownWriteTime" : 1578537672,
+    "last_content_update" : 1578537672646,
+    "path" : "~/Google Drive/python_selfteach/python_selfteach_rstudio.Rmd",
+    "project_path" : "python_selfteach_rstudio.Rmd",
+    "properties" : {
+        "cursorPosition" : "78,64",
+        "scrollLine" : "59",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

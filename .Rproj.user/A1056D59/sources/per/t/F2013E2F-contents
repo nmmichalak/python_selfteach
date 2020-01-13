@@ -1,0 +1,85 @@
+---
+title: "Self-Teaching Python in R Studio"
+author: "Nick Michalak"
+date: "1/8/2020"
+output: 
+  html_document: 
+    df_print: tibble
+    fig_height: 7.5
+    fig_width: 10.5
+    theme: flatly
+    toc: yes
+    toc_float: yes
+---
+
+# Install and/or load libraries
+
+## R
+
+```{r}
+
+# Install R packages
+# install.packages("reticulate")
+
+# Load R libraries
+library(reticulate)
+
+```
+
+## python
+
+```{python}
+
+# Install python libraries
+# py_install("pandas")
+# py_install("numpy")
+# py_install("matplotlib")
+
+
+# Import python libraries
+import pandas
+import numpy
+import matplotlib.pyplot
+
+```
+
+# Data
+
+## Grouping variable with 4 levels
+
+```{python}
+
+group = numpy.repeat(["A", "B", "C", "D"], repeats = 25)
+
+```
+
+## Two correlated, random normal array variables
+
+```{python}
+
+x = numpy.random.normal(loc = 4.00, scale = 1.50, size = 100)
+y = x * 0.75 + numpy.random.normal(loc = 0.00, scale = 1.00, size = 100)
+
+```
+
+## Store variables in a data frame
+
+```{python}
+
+data1 = pandas.DataFrame({"y": y, "x": x, "group": group})
+
+```
+
+# Plots
+
+## Boxplot
+
+```{python}
+
+data1.boxplot(column = ["y", "x"], by = "group", layout = (1, 2))
+
+```
+
+
+
+
